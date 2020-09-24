@@ -1,0 +1,2 @@
+rootProject.name='One Platform'
+include ':app'

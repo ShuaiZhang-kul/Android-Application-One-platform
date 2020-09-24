@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainPage">
+
+
+    <ListView
+        android:id="@+id/list_view"
+        android:layout_width="445dp"
+        android:layout_height="617dp"
+
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"></ListView>
+
+    <Button
+        android:id="@+id/Self_job"
+        android:layout_width="180dp"
+        android:layout_height="53dp"
+        android:clickable="true"
+        android:onClick="refresh"
+        android:text="Job platform"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/self_socialpage"
+        android:layout_width="180dp"
+        android:layout_height="53dp"
+        android:onClick="toSocialPlatform"
+        android:text="Social platform"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <Button
+        android:id="@+id/Self_self"
+        android:layout_width="73dp"
+        android:layout_height="53dp"
+        android:clickable="true"
+        android:drawableBottom="@drawable/textview_border"
+        android:onClick="toSelfPage"
+        android:text="Self"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/self_socialpage"
+        app:layout_constraintHorizontal_bias="0.625"
+        app:layout_constraintStart_toEndOf="@+id/Self_job"
+        app:layout_constraintTop_toBottomOf="@+id/list_view_social"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <Button
+        android:id="@+id/imageButton3"
+        style="@android:style/Widget.DeviceDefault.Light.ImageButton"
+        android:layout_width="47dp"
+        android:layout_height="47dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginBottom="16dp"
+        android:clickable="true"
+        android:onClick="addPost"
+        android:text="+"
+        app:layout_constraintBottom_toTopOf="@+id/self_socialpage"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

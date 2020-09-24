@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ClickedUserPage">
+    <TextView
+        android:id="@+id/clicked_name"
+        android:layout_width="95dp"
+        android:layout_height="38dp"
+        android:layout_marginTop="24dp"
+        android:text="Name"
+        app:layout_constraintEnd_toEndOf="@+id/clickedimageView2"
+        app:layout_constraintStart_toStartOf="@+id/clickedimageView2"
+        app:layout_constraintTop_toBottomOf="@+id/clickedimageView2" />
+
+    <ImageView
+        android:id="@+id/clickedimageView2"
+        android:layout_width="89dp"
+        android:layout_height="75dp"
+        android:layout_marginTop="56dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/icon1" />
+
+    <TextView
+        android:id="@+id/clicked_age"
+        android:layout_width="93dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="22dp"
+        android:text="Age"
+        app:layout_constraintEnd_toEndOf="@+id/clicked_name"
+        app:layout_constraintStart_toStartOf="@+id/clicked_name"
+        app:layout_constraintTop_toBottomOf="@+id/clicked_name" />
+
+    <TextView
+        android:id="@+id/clicked_gender"
+        android:layout_width="99dp"
+        android:layout_height="33dp"
+        android:layout_marginTop="20dp"
+        android:text="Gender"
+        app:layout_constraintEnd_toEndOf="@+id/clicked_age"
+        app:layout_constraintStart_toStartOf="@+id/clicked_age"
+        app:layout_constraintTop_toBottomOf="@+id/clicked_age" />
+
+    <TextView
+        android:id="@+id/clicked_description"
+        android:layout_width="213dp"
+        android:layout_height="109dp"
+        android:layout_marginTop="28dp"
+        android:text="Description"
+        app:layout_constraintEnd_toEndOf="@+id/clickedimageView2"
+        app:layout_constraintStart_toStartOf="@+id/clickedimageView2"
+        app:layout_constraintTop_toBottomOf="@+id/clicked_gender" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
