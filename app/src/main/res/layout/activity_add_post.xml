@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AddPost">
+
+    <EditText
+        android:id="@+id/text_post"
+        android:layout_width="362dp"
+        android:layout_height="159dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="Please type your your demand"
+        tools:layout_editor_absoluteX="24dp"
+        tools:layout_editor_absoluteY="149dp" />
+
+    <EditText
+        android:id="@+id/title_post"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="28dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="Please type in your title"
+        app:layout_constraintStart_toStartOf="@+id/text_post"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/submit_post"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="88dp"
+        android:onClick="submit"
+        android:text="Submit"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/text_post" />
+
+    <Button
+        android:id="@+id/Self_job"
+        android:layout_width="180dp"
+        android:layout_height="53dp"
+        android:onClick="refresh"
+        android:text="Job platform"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/self_socialpage"
+        android:layout_width="180dp"
+        android:layout_height="53dp"
+        android:text="Social platform"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <Button
+        android:id="@+id/Self_self"
+        android:layout_width="73dp"
+        android:layout_height="53dp"
+        android:clickable="true"
+        android:drawableBottom="@drawable/textview_border"
+        android:text="Self"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/self_socialpage"
+        app:layout_constraintHorizontal_bias="0.625"
+        app:layout_constraintStart_toEndOf="@+id/Self_job"
+        app:layout_constraintTop_toBottomOf="@+id/list_view_social"
+        app:layout_constraintVertical_bias="1.0" />
+</androidx.constraintlayout.widget.ConstraintLayout>

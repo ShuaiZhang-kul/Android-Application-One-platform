@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="410dp"
+        android:layout_height="189dp">
+
+
+        <ImageView
+            android:id="@+id/commentLike"
+            android:layout_width="44dp"
+            android:layout_height="42dp"
+            android:background="#FB4848"
+            android:clickable="false"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="@+id/textSocialPost"
+            app:srcCompat="@android:drawable/btn_star_big_on" />
+
+        <ImageView
+            android:id="@+id/addComment"
+            android:layout_width="37dp"
+            android:layout_height="39dp"
+            android:layout_marginStart="88dp"
+            android:layout_marginLeft="88dp"
+            android:background="#0C8C1C"
+            android:clickable="false"
+            app:layout_constraintBottom_toBottomOf="@+id/commentLike"
+            app:layout_constraintEnd_toEndOf="@+id/textSocialPost"
+            app:layout_constraintHorizontal_bias="0.484"
+            app:layout_constraintStart_toEndOf="@+id/commentLike"
+            app:srcCompat="@android:drawable/stat_notify_chat"
+            tools:srcCompat="@android:drawable/stat_notify_chat" />
+
+        <TextView
+            android:id="@+id/textSocialPost"
+            android:layout_width="202dp"
+            android:layout_height="81dp"
+            android:layout_marginTop="36dp"
+            android:layout_marginEnd="76dp"
+            android:layout_marginRight="76dp"
+            android:text="TextView"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/icon_user"
+            android:layout_width="99dp"
+            android:layout_height="88dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginLeft="16dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.495"
+            app:srcCompat="@drawable/icon1" />
+
+        <TextView
+            android:id="@+id/textLikeNum"
+            android:layout_width="63dp"
+            android:layout_height="40dp"
+            android:layout_marginStart="4dp"
+            android:layout_marginLeft="4dp"
+            android:text="TextView"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/commentLike" />
+
+
+
+        <TextView
+            android:id="@+id/postId"
+            android:layout_width="3dp"
+            android:layout_height="0dp"
+            android:layout_marginBottom="28dp"
+            android:visibility="invisible"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toEndOf="parent" />
+
+        <TextView
+            android:id="@+id/textCommentNum"
+            android:layout_width="75dp"
+            android:layout_height="36dp"
+            android:text="TextView"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/addComment" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
